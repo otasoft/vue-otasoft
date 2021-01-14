@@ -1,26 +1,11 @@
 <template>
   <div class="container">
     <div>
+      <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+      <nuxt-link :to="switchLocalePath('pl')">Polski</nuxt-link>
       <Logo />
       <h1 class="title">vue-otasoft</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <p>{{ $t('welcome') }}</p>
     </div>
   </div>
 </template>
@@ -57,9 +42,5 @@ export default Vue.extend({})
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

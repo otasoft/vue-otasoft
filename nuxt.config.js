@@ -51,6 +51,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    'nuxt-i18n',
   ],
   /*
    ** Axios module configuration
@@ -62,4 +63,23 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        label: 'English',
+        file: 'en.js',
+        iso: 'en',
+      },
+      {
+        code: 'pl',
+        label: 'Polish',
+        file: 'pl.js',
+        iso: 'pl',
+      },
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'lang/',
+  },
 }
