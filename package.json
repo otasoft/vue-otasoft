@@ -1,7 +1,9 @@
 {
   "name": "vue-otasoft",
   "version": "0.0.1",
-  "private": true,
+  "description": "Nuxt.js (Vue.js) based PWA frontend for Online Travel Agencies",
+  "author": "Jakub Andrzejewski",
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
