@@ -15,7 +15,8 @@
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.4",
-    "nuxt": "^2.14.11"
+    "nuxt": "^2.14.11",
+    "nuxt-i18n": "^6.17.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",

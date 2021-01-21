@@ -1,3 +1,5 @@
+import { i18nConfig } from './plugins/i18nConfig.js'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -51,6 +53,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    'nuxt-i18n',
   ],
   /*
    ** Axios module configuration
@@ -62,4 +65,5 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  i18n: i18nConfig,
 }
